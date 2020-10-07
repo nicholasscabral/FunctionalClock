@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="public/style.css">
+    <link rel="stylesheet" href="../../public/styles/main.css">
+    <link rel="stylesheet" href="../../public/styles/timer.css">
     <title>Relógio</title>
 </head>
 <body>
@@ -11,12 +12,15 @@
         <div class="title"><h1>Relógio</h1></div>
         <div class="menu-options">
             <div class="option" id="timer">
-                <div class="icon"><img src="/icons/hourglass.png" alt="Cronometro"></div>
+                <div class="icon"><img src="../../icons/timer.png" alt="Cronometro"></div>
                 <div class="option-title"><h2>Timer</h2></div>
-                <div class="time"><p style="font-size: 40px;">--:--</p></div>
-                <input type="time" name="" id="">
+                <div class="time"><p>00:00:00</p></div>
+                <div class="buttons">
+                    <input type="submit" value="Start" id="startButton">
+                    <input type="submit" value="Stop" id="stopButton">
+                </div>
             </div>
     </div>
-    <script src="/public/scripts/timer.js" type="module"></script>
+    <script src="../../public/scripts/timer.js" type="module"></script>
 </body>
 </html>

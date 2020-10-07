@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../public/styles/main.css">
+    <link rel="stylesheet" href="../../public/styles/countdown.css">
     <title>Relógio</title>
 </head>
 <body>
@@ -13,17 +14,14 @@
             <div class="option" id="countdown">
                 <div class="icon"><img src="../../icons/hourglass.png" alt="Cronometro"></div>
                 <div class="option-title"><h2>Countdown</h2></div>
+                <div class="time"><p>--:--</p></div>
+                <input type="time" id="inputTimeValue" value="" required>
+                <div class="buttons">
+                    <input type="submit" value="Start" id="startButton">
+                    <input type="submit" value="Stop" id="stopButton">
+                </div>
             </div>
-            <div class="option" id="timer">
-                <div class="icon"><img src="../../icons/timer.png" alt="timer"></div>
-                <div class="option-title"><h2>Timer</h2></div>
-            </div>
-            <div class="option" id="currentTime">
-                <div class="icon"><img src="../../icons/circular-wall-clock-for-livingroom.png" alt="relogio"></div>
-                <div class="option-title"><h2>Current time</h2></div>
-            </div>
-        </div>
     </div>
-    <script src="../../public/scripts/main.js" type="module"></script>
+    <script src="../../public/scripts/countdown.js" type="module"></script>
 </body>
 </html>
