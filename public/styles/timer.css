@@ -1,0 +1,29 @@
+:root {
+    --primary-color:  #293251;
+    --secondary-color: wheat;
+    --contrast-color: rgb(207, 188, 152);
+}
+
+.buttons {
+    display: flex;
+    align-self: center;
+    justify-items: center;
+    /* background-color: yellow; */
+}
+
+.buttons input {
+    
+    background-color: var(--contrast-color);
+    margin: 30px 20px 0;
+    width: 50%;
+}
+
+.buttons input:hover {
+    background-color: var(--secondary-color);
+}
+
+@media (min-width:700px) {
+    .buttons input {
+        width: 70px;
+    }
+}
