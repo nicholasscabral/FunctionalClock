@@ -4,15 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../public/styles/main.css">
+    <link rel="stylesheet" href="../../public/styles/currentTime.css">
     <title>Relógio</title>
 </head>
 <body>
     <div id="container">
-        <div class="title"><h1>Relógio</h1></div>
+        <div class="title"><h1>Functional clock</h1></div>
         <div class="menu-options">
             <div class="option" id="currentTime">
-                <div class="icon"><img src="/icons/circular-wall-clock-for-livingroom.png" alt="relogio"></div>
+                <div class="icon"><img src="../../icons/circular-wall-clock-for-livingroom.png" alt="relogio"></div>
                 <div class="option-title"><h2>Current time</h2></div>
+                <div class="clock"><p>--:--</p></div>
+                <div class="date">dd/mm/aa</div>
+                <div class="inputs">
+                    <input type="text" class="cityName" placeholder="Enter a city name" required>
+                    <input type="button" value="Enter">
+                </div>
             </div>
         </div>
     </div>

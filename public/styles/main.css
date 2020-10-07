@@ -56,33 +56,19 @@ body {
     border: 5px solid var(--secondary-color);
     border-radius: 0.8rem;
 
-    cursor: pointer;
+    /* cursor: pointer; */
     transition: 400ms;
     
 }
 
-.option input {
-        padding: 10px;
-        margin-top: 15px;
-        width: 50%;
-    
-        background-color: var(--constrast-color);
-        border: 1px solid var(--primary-color);
-        border-radius: 0.4rem;
-    
-        outline: none;
-
-        cursor: pointer;
-        transition: 400ms;
-}
 
 .time {
     font-size: 40px;
 }
 
-.option:hover {
+/* .option:hover {
     background-color: var(--secondary-color);
-}
+} */
 
 @media (min-width:700px) {
     #container {

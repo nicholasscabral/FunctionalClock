@@ -1,0 +1,38 @@
+:root {
+    --primary-color:  #293251;
+    --secondary-color: wheat;
+    --contrast-color: rgb(207, 188, 152);
+}
+
+.clock, .date {
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputs input {
+    height: 25px;
+    width: 200px;
+    
+    text-align: center;
+    margin-top: 15px;
+
+    background-color: wheat;
+    border: 1px solid var(--primary-color);
+    border-radius: 0.4rem;
+
+    cursor: pointer;
+    outline: none;
+}
+
+@media (min-width:700px) {
+    .inputs input[type="button"] {
+        width: 60%;
+    }
+}
+
