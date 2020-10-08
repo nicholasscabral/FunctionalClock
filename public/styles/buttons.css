@@ -11,6 +11,16 @@
     /* background-color: yellow; */
 }
 
+#timer, #countdown, #currentTime {
+    cursor: auto;
+}
+
+#timer:hover, 
+#countdown:hover, 
+#currentTime:hover {
+    background-color: var(--contrast-color);
+}
+
 .buttons input {
     
     background-color: var(--contrast-color);
