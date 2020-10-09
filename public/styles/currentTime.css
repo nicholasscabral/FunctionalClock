@@ -4,8 +4,13 @@
     --contrast-color: rgb(207, 188, 152);
 }
 
-.clock, .date {
+.clock {
     font-size: 25px;
+    margin-top: 10px;
+}
+
+.cityName, .date {
+    font-size: 20px;
     margin-top: 10px;
 }
 
