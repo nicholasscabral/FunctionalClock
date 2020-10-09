@@ -8,7 +8,6 @@
     display: flex;
     align-self: center;
     justify-items: center;
-    /* background-color: yellow; */
 }
 
 #timer, #countdown, #currentTime {
@@ -41,6 +40,12 @@ input {
 
     cursor: pointer;
     transition: 400ms;
+
+    appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
 }
 
 .buttons input:hover {
