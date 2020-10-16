@@ -1,31 +1,50 @@
-export var startButton = document.querySelector('#startButton')
-export var display = document.querySelector('.time')
-export var stopButton = document.querySelector('#stopButton')
+var startButton = document.querySelector('#startButton')
+var display = document.querySelector('.time')
+var stopButton = document.querySelector('#stopButton')
 
 startButton.addEventListener('click', start)
 stopButton.addEventListener('click', stop)
+window.addEventListener('keypress', checkKeyBoard)
 
-export var hh = 0;
-export var mm = 0;
-export var ss = 0;
-export var active = false
-export var interval;
+var hh = 0;
+var mm = 0;
+var ss = 0;
+var activeStart, activeStop = false
+var interval;
 
-export function start() {
-    if (!active) {
-        active = true
+function checkKeyBoard(event) {
+    if (event.code == "Enter") {
+        start()
+    }
+    else if (event.code == "Space") {
+        stop()
+    }
+}
+
+function start() {
+    activeStop = false
+    if (!activeStart) {
+        activeStart = true
         interval = setInterval(timer, 1000)
     }
 }
 
-export function stop() {
-    clearInterval(interval)
+function reset() {
+    activeStop = false
     hh = mm = ss = 0
-    // display.innerHTML = `<p> 00:00:00 </p>`
-    active = false
+    display.innerHTML = `<p> 00:00:00 </p>`
 }
 
-export function timer() {
+function stop() {
+    if (!activeStop) {
+        activeStop = true
+        activeStart = false
+        clearInterval(interval)
+    }
+    else reset()
+}
+
+function timer() {
     ss++
 
     if (ss == 60) {
