@@ -9,15 +9,15 @@ server
     return res.sendFile(__dirname + "/pages/index.html")
 })
 
-.get("/timer.html", (req, res) => {
+.get("/timer", (req, res) => {
     return res.sendFile(__dirname + "/pages/timer.html")
 })
 
-.get("/countdown.html", (req, res) => {
+.get("/countdown", (req, res) => {
     return res.sendFile(__dirname + "/pages/countdown.html")
 })
 
-.get("/currentTime.html", (req, res) => {
+.get("/currentTime", (req, res) => {
     return res.sendFile(__dirname + "/pages/currentTime.html")
 })
 
